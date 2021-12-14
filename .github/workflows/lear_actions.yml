@@ -1,5 +1,11 @@
 - name: nodenv/node-version
-  # You may pin to the exact commit or the version.
+on:
+  [push]
+  jobs:
+    check_node:
+    runs-on: ubuntu-lastest
+    steps:
+    # You may pin to the exact commit or the version.
   # uses: nodenv/actions-node-version@53222bc3e502bdbcc64b794a0e690ae63e58a3c8
   uses: nodenv/actions-node-version@v2.0.4
   with:
